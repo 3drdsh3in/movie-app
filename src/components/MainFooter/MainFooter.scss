@@ -1,0 +1,144 @@
+.main-footer {
+    // background: #131517;
+    background: #081c24;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    // height: 9000px;
+
+    box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        .main-footer-left {
+            margin: 4rem auto 5rem 5rem;
+            .main-footer-left-header {
+                display: flex;
+                align-items: center;
+                margin: 1.5rem 0;
+                hr {
+                    display: none;
+                }
+            }
+            .main-footer-left-contacts {
+                text-align: left;
+
+                .main-footer-left-contacts-item {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0 0 0 auto;
+                    text-align: right;
+                }
+                a {
+                color: #ffffff;
+                text-decoration: none;
+                }
+                h3 {
+                    margin: 0.8rem 0rem;
+                    color: #b0b0b0;
+                    min-width: 139.3px;
+                }
+                }
+            }
+        }
+        .main-footer-right {
+            margin: 4rem 1rem 5rem 0;
+            .main-footer-right-icons {
+            // display: flex;
+            // justify-content: center;
+                a {
+                    // display: block;
+                    width: 2rem;
+                    height: 2rem;
+                    i.fa-2x {
+                        width: 2rem;
+                        margin: 2rem 0.2rem 1rem 0.2rem;
+                        color: #131517;
+                        padding: 10px;
+                        border-radius: 50%;
+                        background: #ffffff;
+                        transition: background 0.6s 0s;
+                    }
+                    i:hover {
+                        color: #ffffff;
+                        background: #00d377;
+                    }
+                }
+            }
+            img.main-footer-mdb-logo {
+                width: 150px;
+            }
+            div.main-footer-right-copyright {
+                font-size: 0.7rem;
+                margin: 0rem auto;
+                color: #b0b0b0;
+            }
+        }
+    }
+
+    .main-footer-left {
+        padding: 2rem 0 1rem 0;
+        .main-footer-left-header {
+            h1 {
+                margin: 0 1rem 0 0;
+            }
+            hr {
+                color: #b0b0b0;
+                width: 250px;
+                margin: 1rem auto;
+            }
+            a {
+                margin: 0px 10px;
+                text-decoration: none;
+                color: #b0b0b0;
+                transition: color 0.6s 0s;
+            }
+            a:hover {
+                color: #ffffff;
+            }
+        }
+        .main-footer-left-contacts {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+            h3 {
+                color: #b0b0b0;
+            }
+        }
+    }
+    .main-footer-right {
+        padding: 0 0 1rem 0;
+        margin: 5rem;
+        .main-footer-right-icons {
+            // display: flex;
+            // justify-content: center;
+            a {
+                // display: block;
+                width: 2rem;
+                height: 2rem;
+                i {
+                    width: 2rem;
+                    margin: 0rem 1.2rem 2rem 1.2rem;
+                    color: #131517;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    transition: background 0.6s 0s;
+                }
+                i:hover {
+                    color: #ffffff;
+                    background: #00d377;
+                }
+            }
+        }
+        .main-footer-mdb-logo {
+        width: 200px;
+        }
+        .main-footer-right-copyright {
+            margin: 2rem;
+            color: #b0b0b0;
+        }
+    }
+}
