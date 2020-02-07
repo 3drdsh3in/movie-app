@@ -42,13 +42,10 @@
                 }
             }
         }
-        .main-footer-right {
-            margin: 4rem 1rem 5rem 0;
+        section.main-footer-right {
+            margin: 5rem;
             .main-footer-right-icons {
-            // display: flex;
-            // justify-content: center;
                 a {
-                    // display: block;
                     width: 2rem;
                     height: 2rem;
                     i.fa-2x {
@@ -110,17 +107,15 @@
     }
     .main-footer-right {
         padding: 0 0 1rem 0;
-        margin: 5rem;
+        margin: 2rem;
         .main-footer-right-icons {
-            // display: flex;
-            // justify-content: center;
+            flex-wrap: nowrap;
             a {
-                // display: block;
                 width: 2rem;
                 height: 2rem;
                 i {
                     width: 2rem;
-                    margin: 0rem 1.2rem 2rem 1.2rem;
+                    margin: 0rem 0.6rem 2rem 0.6rem;
                     color: #131517;
                     padding: 10px;
                     border-radius: 50%;

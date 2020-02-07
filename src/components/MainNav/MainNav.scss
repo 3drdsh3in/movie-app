@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     background: #1c262b;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 
     .nav-top-section {
 
@@ -17,6 +19,7 @@
         // transform: translateY(0px);
         top: 0px;
         transition: top 0.4s 0s;
+        border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
 
         &.hide {
@@ -101,19 +104,24 @@
             padding: 1rem 0;
             i {
                 color: #ffffff;
-                }
+                transition: color 0.4s 0s;
+            }
+            i:hover {
+                color: #00d377;
+            }
             }
     }
     @media screen and (min-width: 768px) {
         .nav-top-section {
             position: static;
+            border-bottom: none;
         }
         .nav-split-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            width: 250px;
+            grid-template-columns: repeat(3, 50px);
+            grid-gap: 1rem;
             position: static;
-            border-bottom: 1px solid #ffffff;
+            // border-bottom: 1px solid #ffffff;
         }
         .hamburger {
             display: none;
