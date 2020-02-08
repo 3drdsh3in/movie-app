@@ -9,9 +9,9 @@ import toggleNav from '../../actions/toggleNav';
 function MainNav(props) {
 
     // Add animations to page upon mount completion [Comeback when page is properly structured]
-    useEffect(() => {
+    // useEffect(() => {
 
-    }, [])
+    // }, [])
 
     const handleHamburgerClickEvent = () => {
         props.toggleNav();
@@ -58,15 +58,23 @@ function MainNav(props) {
     )
 
 }
-// Give the component props some important state properties.
+// Give the component props some important state properties via the following container
 const mapStateToProps = state => ({
     apiKey: state.PostMDBConfig.apiKey,
     navStatus: state.toggleNav.navStatus
 })
-// Give the component props the important toggleNav function.
+// Give the component props the important toggleNav function via the following container.
 const mapDispatchToProps = dispatch => ({
     toggleNav: () => dispatch(toggleNav())
 })
 
-// Pass current (two of the) app's state into the component above along with a 
+// 
+// const tempVariable = connect(mapStateToProps, mapDispatchToProps);
+// console.log(tempVariable)
+// console.log(tempVariable(MainNav));
+// console.log(MainNav);
+// export default tempVariable(MainNav);
+
+// Get from the current redux store the state/dispatches & map them to props
+// ...before injecting them into the MainNav component {Thus completing it as a container component}.
 export default connect(mapStateToProps, mapDispatchToProps)(MainNav);
