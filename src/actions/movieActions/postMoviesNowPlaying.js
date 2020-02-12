@@ -6,6 +6,7 @@ const saveMoviesNowPlaying = payload => ({
 });
 
 const postMoviesNowPlaying = url => {
+    console.log(url)
     return dispatch => {
         fetch(url)
             .then(res => res.json())

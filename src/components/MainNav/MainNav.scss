@@ -8,6 +8,7 @@
     background: #1c262b;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
+    z-index: 10;
 
     .nav-top-section {
 
@@ -16,11 +17,13 @@
         grid-template-columns: 90px 1fr 90px;
         justify-items: center;
         width: 100%;
+        background: #1c262b;
         // transform: translateY(0px);
         top: 0px;
         transition: top 0.4s 0s;
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
+        z-index: 10;
 
         &.hide {
             top: -65px;
@@ -67,6 +70,8 @@
         position: fixed;
         top: 0.4rem;
         right: 0.4rem;
+
+        z-index: 200;
     }
     
     // Overwriting Hamburger menu css because the documentation based code is
@@ -88,12 +93,11 @@
         grid-template-columns: repeat(3,1fr);
         background: #1c262b;
         border-top: 1px solid #ffffff;
+        z-index: 10;
 
         position: fixed;
         bottom: 0px;
 
-        // transform: translateY(0px);
-        bottom: 0px;
         transition: bottom 0.4s 0s;
 
         &.hide {
@@ -112,6 +116,8 @@
             }
     }
     @media screen and (min-width: 768px) {
+        position: fixed;
+        width: 100%;
         .nav-top-section {
             position: static;
             border-bottom: none;

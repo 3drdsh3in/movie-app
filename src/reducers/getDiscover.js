@@ -1,12 +1,12 @@
-import { GET_TV_CREDITS } from '../../actions/types'
+import { GET_DISCOVER } from '../actions/types';
 
 const initialState = {
-    cast: []
+    results: []
 };
 
-const getTVCredits = (state = initialState, action) => {
+const getDiscover = (state = initialState, action) => {
     switch (action.type) {
-        case GET_TV_CREDITS:
+        case GET_DISCOVER:
             return {
                 ...state,
                 ...action.payload
@@ -14,6 +14,6 @@ const getTVCredits = (state = initialState, action) => {
         default:
             return state;
     }
-};
+}
 
-export default getTVCredits;
+export default getDiscover;

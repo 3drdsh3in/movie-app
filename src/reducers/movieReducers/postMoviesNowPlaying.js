@@ -7,10 +7,12 @@ const initialState = {
 const postMoviesNowPlaying = (state = initialState, action) => {
     switch (action.type) {
         case POST_MOVIES_NOWPLAYING:
-            return {
-                ...state,
+            return ({
+                // ...state,
                 ...action.payload
-            }
+            })
+        default:
+            return state;
     }
 }
 
