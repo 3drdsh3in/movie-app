@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
@@ -22,7 +22,7 @@ function MainNav(props) {
     return (
         <nav className="nav-main">
             <div className={`nav-top-section ${props.navStatus ? '' : 'hide'}`}>
-                <img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img>
+                <Link to={'/'}><img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img></Link>
                 <div className="nav-searchbar">
                     <form className="nav-search-form">
                         <input placeholder="search..." className="nav-search-form-input" type="text" name="" id="" />
