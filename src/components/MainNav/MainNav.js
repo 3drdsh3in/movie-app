@@ -15,7 +15,7 @@ function MainNav(props) {
     return (
         <nav className="nav-main">
             <div className={`nav-top-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/'}><img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img></Link>
+                <Link to={'/movie-app/'}><img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img></Link>
                 <div className="nav-searchbar">
                     <form className="nav-search-form">
                         <input placeholder="search..." className="nav-search-form-input" type="text" name="" id="" />
@@ -31,7 +31,7 @@ function MainNav(props) {
             </button>
 
             <div className={`nav-split-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/'}>
+                <Link to={'/movie-app/'}>
                     <div className="nav-split-section-item">
                         <i className="fas fa-home fa-2x"></i>
                     </div>
