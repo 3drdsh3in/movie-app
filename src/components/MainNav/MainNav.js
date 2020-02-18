@@ -8,16 +8,9 @@ import toggleNav from '../../actions/toggleNav';
 
 function MainNav(props) {
 
-    // Add animations to page upon mount completion [Comeback when page is properly structured]
-    // useEffect(() => {
-
-    // }, [])
-
     const handleHamburgerClickEvent = () => {
         props.toggleNav();
     }
-
-    console.log(props);
 
     return (
         <nav className="nav-main">

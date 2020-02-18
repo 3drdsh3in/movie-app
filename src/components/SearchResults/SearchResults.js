@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainNav from '../MainNav/MainNav';
+// import MainNav from '../MainNav/MainNav';
 
 
 class SearchResults extends React.Component {
@@ -11,7 +11,7 @@ class SearchResults extends React.Component {
     render() {
         return (
             <>
-                <MainNav />
+                {/* <MainNav /> */}
             </>
         )
     }

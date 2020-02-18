@@ -26,8 +26,8 @@
         z-index: 10;
 
         &.hide {
-            top: -65px;
-            // transform: translateY(-65px);
+            top: -70px;
+            // transform: translateY(-70px);
         }
 
         .nav-searchbar {
@@ -101,7 +101,7 @@
         transition: bottom 0.4s 0s;
 
         &.hide {
-            bottom: -65px;
+            bottom: -70px;
         }
 
         a {

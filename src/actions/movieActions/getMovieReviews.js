@@ -6,6 +6,7 @@ const saveMovieReviews = payload => ({
 });
 
 const getMovieReviews = url => {
+    console.log('d')
     return dispatch => {
         fetch(url)
             .then(res => res.json(res))

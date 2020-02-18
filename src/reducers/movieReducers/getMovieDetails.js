@@ -1,8 +1,8 @@
-import { GET_MOVIE_DETAILS } from '../../actions/types';
+import { GET_MOVIE_DETAILS } from '../../actions/types'
 
 const initialState = {
-    results: []
-}
+
+};
 
 const getMovieDetails = (state = initialState, action) => {
     switch (action.type) {
@@ -10,10 +10,10 @@ const getMovieDetails = (state = initialState, action) => {
             return {
                 ...state,
                 ...action.payload
-            }
+            };
         default:
             return state;
     }
-}
+};
 
 export default getMovieDetails;

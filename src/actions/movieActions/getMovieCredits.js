@@ -6,6 +6,7 @@ const saveMovieCredits = payload => ({
 });
 
 const getMovieCredits = url => {
+    console.log('b');
     return dispatch => {
         fetch(url)
             .then(res => res.json())

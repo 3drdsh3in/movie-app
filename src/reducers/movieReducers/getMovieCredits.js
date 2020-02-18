@@ -1,8 +1,8 @@
 import { GET_MOVIE_CREDITS } from '../../actions/types';
 
 const initialState = {
-    results: []
-}
+    cast: []
+};
 
 const getMovieCredits = (state = initialState, action) => {
     switch (action.type) {
@@ -10,10 +10,10 @@ const getMovieCredits = (state = initialState, action) => {
             return {
                 ...state,
                 ...action.payload
-            }
+            };
         default:
             return state;
     }
-}
+};
 
 export default getMovieCredits;

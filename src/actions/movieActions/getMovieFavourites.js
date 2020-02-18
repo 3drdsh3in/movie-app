@@ -1,7 +1,7 @@
-import { GET_MOVIE_FAVORITES } from '../types.js'
+import { GET_MOVIE_FAVOURITES } from '../types.js'
 
 const saveMovieFavorites = payload => ({
-    type: GET_MOVIE_FAVORITES,
+    type: GET_MOVIE_FAVOURITES,
     payload
 });
 

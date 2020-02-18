@@ -7,6 +7,7 @@ const saveMovieTrailers = payload => ({
 });
 
 const getMovieTrailers = url => {
+    console.log('c')
     return dispatch => {
         fetch(url)
             .then(res => res.json())

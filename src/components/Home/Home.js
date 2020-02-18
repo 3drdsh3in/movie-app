@@ -95,7 +95,7 @@ class Home extends Component {
                 },
                 scrollbar: {
                     el: '.swiper-scrollbar',
-                    hide: true
+                    // hide: true
                 },
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -103,8 +103,6 @@ class Home extends Component {
                 }
             });
         })();
-
-        console.log(this.props.TVAiringToday.results)
 
         // Displays correct carousels
         let movie;
@@ -139,8 +137,6 @@ class Home extends Component {
                 <div className="home-container-main">
                     {movie}
                 </div>
-
-                <MainFooter />
             </div>
         );
     }

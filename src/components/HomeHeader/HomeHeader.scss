@@ -40,7 +40,7 @@
         color: $secondary-font-color;
         margin: 0;
       }
-
+      // Name Of Movie /w Rating:
       div {
         bottom: 2rem;
         left: 2rem;
@@ -48,16 +48,11 @@
         text-align: left;
         text-decoration: none;
       }
-
-      a:active, a:hover, a:visited {
-        color: initial;
-        text-decoration: none;
-      }
     }
   }
 
   .home-swiper-pagination {
-    z-index: 1;
+    z-index: 10;
   }
 }
 
@@ -81,6 +76,9 @@
     .swiper-pagination-progressbar-fill {
       background-color: $secondary-color;
       padding-top: 4.7rem;
+    }
+    .home-swiper-pagination {
+      z-index: 1;
     }
   }
 }

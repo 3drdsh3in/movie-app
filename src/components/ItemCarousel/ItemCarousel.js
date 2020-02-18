@@ -34,6 +34,8 @@ class ItemCarousel extends Component {
                     </div>
                     <div className="swiper-button-prev swiper-button-white"></div>
                     <div className="swiper-button-next swiper-button-white"></div>
+                    {/* Add Pagination */}
+                    <div className="swiper-pagination"></div>
                 </div>
 
                 <hr className="carousel-container__separator" />

@@ -1,8 +1,8 @@
 
-import { GET_TV_FAVORITES } from '../types';
+import { GET_TV_FAVOURITES } from '../types';
 
 const saveTVFavorites = payload => ({
-    type: GET_TV_FAVORITES,
+    type: GET_TV_FAVOURITES,
     payload
 });
 
