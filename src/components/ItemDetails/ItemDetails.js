@@ -30,11 +30,7 @@ class ItemDetails extends React.Component {
 
     UNSAFE_componentWillReceiveProps(nextProps) {
         console.log('componentWillMount')
-        // console.log(nextProps)
-        console.log(this.props.match.params.id)
-        console.log(nextProps.match.params.id)
         if (nextProps.match.params.id !== this.props.match.params.id) {
-            console.log('it ran')
             this.getFilmData(nextProps.match.params.id, nextProps.match.params.type);
         }
     }
@@ -96,7 +92,7 @@ class ItemDetails extends React.Component {
         return (
             <>
                 <ItemHeader details={dispDetails.overview ? dispDetails : ''} />
-                <PeopleCarousel credits={dispCredits ? dispCredits : ''} />
+                <PeopleCarousel details={dispDetails ? dispDetails : ''} credits={dispCredits ? dispCredits : ''} />
                 <ItemTrailers trailers={dispTrailers ? dispTrailers : ''} />
                 <ItemReviews reviews={dispReviews ? dispReviews : ''} />
             </>
@@ -137,7 +133,5 @@ const mapDispatchToProps = dispatch => ({
     getTVTrailers: url => dispatch(getTVTrailers(url)),
     getTVReviews: url => dispatch(getTVReviews(url)),
 });
-
-console.log('params defined')
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemDetails);
