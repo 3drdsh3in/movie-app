@@ -34,7 +34,7 @@ class ItemHeader extends React.Component {
                                         {headerData.status ? headerData.status : ''} | {headerData.original_language ? headerData.original_language : ''}
                                     </div>
                                     <div className="item-header-bottom-information-text-genres">
-                                        {headerData.genres[0].name ? headerData.genres[0].name : ''} | {headerData.genres[1].name ? headerData.genres[1].name : ''}
+                                        {headerData.genres[0] ? headerData.genres[0].name : ''} | {headerData.genres[1] ? headerData.genres[1].name : ''}
                                     </div>
                                 </div>
                             </div>

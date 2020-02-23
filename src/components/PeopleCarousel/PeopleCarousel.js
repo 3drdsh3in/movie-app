@@ -7,7 +7,7 @@ class PeopleCarousel extends React.Component {
 
     render() {
         console.log(this.props.details.overview)
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.s1', {
             loop: false,
             slidesPerView: 3,
             spaceBetween: 0,
@@ -44,7 +44,7 @@ class PeopleCarousel extends React.Component {
                         <h2>Summary:</h2>
                         <p>{this.props.details.overview}</p>
                     </div>
-                    <div className="swiper-container" >
+                    <div className="swiper-container s1" >
                         <h2>Cast:</h2>
                         <div className="swiper-wrapper">
                             {this.props.credits.cast.map(char => {

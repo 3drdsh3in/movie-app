@@ -17,6 +17,8 @@ import PeopleCarousel from '../PeopleCarousel/PeopleCarousel';
 import ItemReviews from '../ItemReviews/ItemReviews';
 import ItemTrailers from '../ItemTrailers/ItemTrailers';
 
+import './ItemDetails.scss';
+
 
 class ItemDetails extends React.Component {
 
@@ -90,12 +92,12 @@ class ItemDetails extends React.Component {
         }
 
         return (
-            <>
+            <div className="item-main-content">
                 <ItemHeader details={dispDetails.overview ? dispDetails : ''} />
                 <PeopleCarousel details={dispDetails ? dispDetails : ''} credits={dispCredits ? dispCredits : ''} />
                 <ItemTrailers trailers={dispTrailers ? dispTrailers : ''} />
                 <ItemReviews reviews={dispReviews ? dispReviews : ''} />
-            </>
+            </div>
         )
     }
 }
