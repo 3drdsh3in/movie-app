@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ItemReviews.scss';
 
 class ItemReviews extends React.Component {
 
     render() {
+        console.log(this.props)
         return (
+
             <div className="ItemReviews" >
                 <h2>Reviews:</h2>
                 <div className="ItemReviews-content">
@@ -15,8 +18,9 @@ class ItemReviews extends React.Component {
                                     {review.author}
                                 </h3>
                                 <p className="ItemReviews-content-review-paragraph">
-                                    {review.content}
+                                    {review.content.length > 1000 ? `${review.content.slice(0, 1000)}...` : review.content}
                                 </p>
+                                <a href={review.url}>See more details...</a>
                             </div>
                         ))
                         :

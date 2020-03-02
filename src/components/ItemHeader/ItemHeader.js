@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
 import './ItemHeader.scss';
 
@@ -14,7 +15,9 @@ class ItemHeader extends React.Component {
                 <>
                     <header className="item-header" style={{ backgroundImage: `url(http://image.tmdb.org/t/p/original/${headerData.backdrop_path})` }}>
                         <div className="item-header-top">
-                            <i className="fas fa-chevron-left fa-3x"></i>
+                            <Route from="" to="/">
+                                <i className="fas fa-chevron-left fa-3x"></i>
+                            </Route>
                             <i className="fas fa-share fa-3x"></i>
                         </div>
                         <div className="item-header-bottom">

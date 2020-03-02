@@ -19,6 +19,7 @@ function App() {
         <Route path="/movie-app/" exact component={Home} />
         {/* Renders out a component based on a corresponding url */}
         <Route path="/movie-app/details/:type/:id" exact component={ItemDetails} />
+        <Route path="/movie-app/search-results/:query" exact component={SearchResults} />
         <MainFooter />
       </div>
     </Router>

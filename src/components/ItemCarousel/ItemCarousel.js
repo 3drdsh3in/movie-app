@@ -9,7 +9,7 @@ class ItemCarousel extends Component {
         const config = this.props.MDBConfig;
 
         return (
-            <div className="carousel-container wow fadeIn" data-wow-duration="3s">
+            <div className="carousel-container" data-wow-duration="3s">
 
                 <div className="swiper-container">
                     <h2 className="swiper-container__title">{this.props.title}</h2>

@@ -130,8 +130,8 @@ class Home extends Component {
                 <HomeHeader itemType={this.props.itemType} MDBConfig={this.props.MDBConfig} items={this.props.itemType === 'TV' ? this.props.TVAiringToday.results : this.props.moviesNowPlaying.results} />
 
                 <div className="item-controller">
-                    <button className="item-controller__switch wow fadeInDown" data-wow-delay=".5s" data-wow-duration="1s" onClick={() => { this.props.setItemType('MOVIES'); this.handleMovieFetch(); }}>Movies</button>
-                    <button className="item-controller__switch wow fadeInDown" data-wow-delay=".5s" data-wow-duration="1s" onClick={() => { this.props.setItemType('TV'); this.handleTVFetch(); }}>TV Shows</button>
+                    <button className="item-controller__switch" onClick={() => { this.props.setItemType('MOVIES'); this.handleMovieFetch(); }}>Movies</button>
+                    <button className="item-controller__switch" onClick={() => { this.props.setItemType('TV'); this.handleTVFetch(); }}>TV Shows</button>
                 </div>
 
                 <div className="home-container-main">

@@ -11,7 +11,7 @@ import PostMDBConfigReducer from './PostMDBConfigReducer';
 
 import setItemType from './setItemType';
 import toggleNav from './toggleNav';
-// import searchData from './searchData';
+import searchData from './searchData';
 // import postSearchResults from './postSearchResults';
 
 import postMoviesNowPlaying from './movieReducers/postMoviesNowPlaying';
@@ -56,7 +56,7 @@ const rootReducer = combineReducers({
 
     setItemType,
     toggleNav,
-    // searchData,
+    searchData,
     // postSearchResults,
 
     postMoviesNowPlaying,
