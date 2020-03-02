@@ -27,10 +27,11 @@ function SearchResults(props) {
             <h3>Search Results for {props.match.params.query}</h3>
             <hr />
             <div className="searchResults-container">
+                {/* Loop through and display all movies with existing images */}
                 {props.searchResults.results ?
                     props.searchResults.results.map(result => (result.poster_path ?
                         <Link className="searchResults-container-item" to={`/movie-app/details/${props.itemType.toLowerCase()}/${result.id}`} >
-                            <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} />
+                            <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt="pic" />
                             <h3>{result.title}</h3>
                         </Link>
                         :
