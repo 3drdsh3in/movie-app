@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Home from './components/Home/Home';
+import Discover from './components/Discover/Discover'
 import SearchResults from './components/SearchResults/SearchResults';
 import ItemDetails from './components/ItemDetails/ItemDetails';
 import MainNav from './components/MainNav/MainNav';
@@ -20,6 +21,7 @@ function App() {
         {/* Renders out a component based on a corresponding url */}
         <Route path="/movie-app/details/:type/:id" exact component={ItemDetails} />
         <Route path="/movie-app/search-results/:query" exact component={SearchResults} />
+        <Route path="/movie-app/discover" exact component={Discover} />
         <MainFooter />
       </div>
     </Router>

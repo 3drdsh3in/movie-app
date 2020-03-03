@@ -3,8 +3,34 @@
     padding: 4rem 0rem;
     text-align: left;
     color: white;
-}
-
-p {
+    p {
     margin: 0;
+    }
+    &-content {
+        &-review {
+            background: #1c262b;
+            margin: 4rem 0rem;
+            padding: 2rem 4rem;
+            p {
+                margin-bottom: 2rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                width: 125px;
+                color: #fff;
+                transition: color 0.4s 0s;
+                i {
+                    padding: 0rem 0.2rem;
+                }
+            }
+            a:hover {
+                color: #00d377;
+            }
+        }
+        &-review.border-bar {
+                border-left: 6px solid #fff;
+            }
+    }
 }

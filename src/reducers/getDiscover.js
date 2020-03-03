@@ -1,6 +1,7 @@
 import { GET_DISCOVER } from '../actions/types';
 
 const initialState = {
+    apiKey: 'fb8a39c9807f2120f494db319897180d',
     results: []
 };
 

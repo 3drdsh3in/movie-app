@@ -31,9 +31,11 @@
       font-size: 1.2rem;
       font-weight: bold;
       letter-spacing: .4rem;
-      margin-bottom: 2rem;
       text-transform: uppercase;
       transition: color 0.4s 0s;
+      max-width: 225px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
     }
 
     &__title:hover {

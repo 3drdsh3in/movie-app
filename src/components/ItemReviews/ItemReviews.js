@@ -13,14 +13,17 @@ class ItemReviews extends React.Component {
                 <div className="ItemReviews-content">
                     {this.props.reviews.results.length > 0 ?
                         this.props.reviews.results.map(review => (
-                            <div className="ItemReviews-content-review">
+                            <div className="ItemReviews-content-review border-bar">
                                 <h3 className="ItemReviews-content-review-header">
                                     {review.author}
                                 </h3>
                                 <p className="ItemReviews-content-review-paragraph">
                                     {review.content.length > 1000 ? `${review.content.slice(0, 1000)}...` : review.content}
                                 </p>
-                                <a href={review.url}>See more details...</a>
+                                <a href={review.url}>
+                                    <span>See full review</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
                             </div>
                         ))
                         :
