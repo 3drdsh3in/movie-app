@@ -9,7 +9,7 @@ class ItemReviews extends React.Component {
         return (
 
             <div className="ItemReviews" >
-                <h2>Reviews:</h2>
+                <h2>Reviews</h2>
                 <div className="ItemReviews-content">
                     {this.props.reviews.results.length > 0 ?
                         this.props.reviews.results.map(review => (

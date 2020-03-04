@@ -16,7 +16,6 @@ import postTVTopRated from '../../actions/TVActions/postTVTopRated';
 import Swiper from 'swiper';
 import HomeHeader from '../HomeHeader/HomeHeader';
 import ItemCarousel from '../ItemCarousel/ItemCarousel';
-import MainFooter from '../MainFooter/MainFooter';
 
 import './Home.scss';
 

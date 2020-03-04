@@ -7,6 +7,11 @@
 
         &-summary {
             padding: 2rem 0rem;
+            h2 {
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
         }
 
         .swiper-container {
@@ -16,6 +21,12 @@
             font-size: 14px;
             margin: 0;
             padding: 0 0 2rem 0;
+
+            h2 {
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.4rem;
+            }
 
             .swiper-wrapper{
 

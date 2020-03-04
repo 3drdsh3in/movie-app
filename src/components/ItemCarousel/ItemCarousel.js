@@ -20,7 +20,7 @@ class ItemCarousel extends Component {
 
                             <div key={movie.id} className="swiper-slide" >
                                 <Link to={`/movie-app/details/${this.props.type.toLowerCase()}/${movie.id}`} >
-                                    <img className="swiper-slide__image" src={`https://image.tmdb.org/t/p/w154/${config.images ? config.images.secure_base_url : ''}${config.images ? config.images.poster_sizes[1] : ''}${movie.poster_path}`} alt={movie.title} />
+                                    <img className="swiper-slide__image" src={`https://image.tmdb.org/t/p/w342/${config.images ? config.images.secure_base_url : ''}${config.images ? config.images.poster_sizes[1] : ''}${movie.poster_path}`} alt={movie.title} />
                                     <h3 className="swiper-slide__title">{movie.title}</h3>
                                     <h3 className="swiper-slide__title">{movie.original_name}</h3>
                                     <p className="swiper-slide-rating">

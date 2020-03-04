@@ -54,7 +54,7 @@
       &__image {
         border-radius: 5px;
         height: 190px;
-        width: auto;
+        width: 125px;
       }
 
       // swiper-slide__title
@@ -114,6 +114,80 @@
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .carousel-container {
+    
+    .swiper-container {
+      
+      .swiper-slide {
+        opacity: .6;
+        // text-align: left;
+        
+        &__title {
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+        // text-align: left;
+
+        &__title {
+          text-align: center;
+          margin: 0;
+        }
+
+        &-rating {
+          left: 20%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 450px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+        // text-align: left;
+
+        &__title {
+          text-align: center;
+          margin: 0;
+        }
+
+        &-rating {
+          left: 25%;
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: 600px) {
   .carousel-container {
 
@@ -135,8 +209,32 @@
           margin: 0;
         }
 
-        &__rating {
-          left: 0px;
+        &-rating {
+          left: 25%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+        // text-align: left;
+
+        &__title {
+          text-align: center;
+          margin: 0;
         }
 
         &-rating {
@@ -152,13 +250,84 @@
 
     .swiper-container {
 
-      .swiper-slide {
-        opacity: .6;
-        // text-align: left;
+      .swiper-button-next {
+        display: block;
+      }
 
-        &__title {
-          text-align: center;
-          margin: 0;
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+
+        &-rating {
+          left: 18%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+
+        &-rating {
+          left: 24%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+
+        &-rating {
+          left: 30%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 2200px) {
+  .carousel-container {
+
+    .swiper-container {
+
+      .swiper-button-next {
+        display: block;
+      }
+
+      .swiper-button-prev {
+        display: block;
+      }
+
+      .swiper-slide {
+
+        &-rating {
+          left: 35%;
         }
       }
     }

@@ -9,6 +9,9 @@ import PostMDBConfigReducer from './PostMDBConfigReducer';
 // import toggleLogInStatus from './authenticationReducers/toggleLogInStatus';
 // import getUserDetails from './authenticationReducers/getUserDetails';
 
+import postMovieGenres from './movieReducers/postMovieGenres';
+// import postTVGenres from './TVReducers/postTVGenres';
+
 import setItemType from './setItemType';
 import toggleNav from './toggleNav';
 import searchData from './searchData';
@@ -53,6 +56,8 @@ const rootReducer = combineReducers({
     // getGuestSession,
     // toggleLogInStatus,
     // getUserDetails,
+
+    postMovieGenres,
 
     setItemType,
     toggleNav,

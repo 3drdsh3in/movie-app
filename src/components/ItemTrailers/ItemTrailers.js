@@ -38,7 +38,7 @@ class ItemTrailers extends React.Component {
         });
         return (
             <div className="ItemTrailers">
-                <h2 className="ItemTrailers-headername">Trailers: </h2>
+                <h2 className="ItemTrailers-headername">Trailers </h2>
                 <div className="swiper-container s2">
                     <div className="swiper-wrapper">
                         {this.props.trailers.results ?

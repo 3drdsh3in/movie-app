@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Route, Link } from 'react-router-dom';
 
 import './ItemHeader.scss';
 
@@ -7,6 +7,7 @@ class ItemHeader extends React.Component {
 
     initHeader() {
         let headerData = this.props.details;
+        console.log(this.refs)
         // Function need to parse the headerData into JSX.
 
         if (!headerData === false) {
@@ -14,36 +15,37 @@ class ItemHeader extends React.Component {
             return (
                 <>
                     <header className="item-header" style={{ backgroundImage: `url(http://image.tmdb.org/t/p/original/${headerData.backdrop_path})` }}>
-                        <div className="item-header-top">
-                            <Route from="" to="/">
-                                <i className="fas fa-chevron-left fa-3x"></i>
-                            </Route>
-                            <i className="fas fa-share fa-3x"></i>
-                        </div>
-                        <div className="item-header-bottom">
-                            <div className="item-header-bottom-information">
-                                <img className="item-header-bottom-information-poster" src={`http://image.tmdb.org/t/p/w92/${headerData.poster_path}`} />
-                                <div className="item-header-bottom-information-text">
-                                    <h1>{headerData.title}</h1>
-                                    <div className="item-header-bottom-information-text-rating">
-                                        <p>{headerData.vote_average}</p>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <div className="item-header-bottom-information-text-language">
-                                        {headerData.status ? headerData.status : ''} | {headerData.original_language ? headerData.original_language : ''}
-                                    </div>
-                                    <div className="item-header-bottom-information-text-genres">
-                                        {headerData.genres[0] ? headerData.genres[0].name : ''} | {headerData.genres[1] ? headerData.genres[1].name : ''}
+                        <div className="item-header-container">
+                            <div className="item-header-container-top">
+                                <Link from="/movie-app/details/:id" to="/movie-app/">
+                                    <i className="fas fa-chevron-left fa-3x"></i>
+                                </Link>
+                                <i className="fas fa-share fa-3x"></i>
+                            </div>
+                            <div className="item-header-container-bottom">
+                                <div className="item-header-container-bottom-information">
+                                    <img className="item-header-container-bottom-information-poster" src={`http://image.tmdb.org/t/p/w300/${headerData.poster_path}`} />
+                                    <div className="item-header-container-bottom-information-text">
+                                        <h2>{headerData.title}</h2>
+                                        <div className="item-header-container-bottom-information-text-rating">
+                                            <h3>{headerData.vote_average}</h3>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 2) ? 'highlight' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 4) ? 'highlight' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 6) ? 'highlight' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 8) ? 'highlight' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 10) ? 'highlight' : ''}`}></i>
+                                        </div>
+                                        <div className="item-header-container-bottom-information-text-language">
+                                            {headerData.status ? headerData.status : ''} | {headerData.original_language ? headerData.original_language : ''}
+                                        </div>
+                                        <div className="item-header-container-bottom-information-text-genres">
+                                            {headerData.genres[0] ? headerData.genres[0].name : ''} | {headerData.genres[1] ? headerData.genres[1].name : ''}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="item-header-bottom-like">
-                                <i className="far fa-heart fa-3x"></i>
-                                <i className="fas fa-heart fa-3x hide"></i>
+                                <div className="item-header-container-bottom-like">
+                                    <i className="fas fa-heart fa-3x"></i>
+                                </div>
                             </div>
                         </div>
                     </header>

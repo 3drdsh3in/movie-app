@@ -7,6 +7,7 @@
   }
   h3 {
     text-transform: uppercase;
+    letter-spacing: .4rem;
   }
   
   hr {
@@ -27,7 +28,7 @@
     @media screen and (min-width: 1300px) {
       grid-template-columns: repeat(5, 1fr);
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1800px) {
       grid-template-columns: repeat(6, 1fr);
     }
     grid-column-gap: 25px;
@@ -42,6 +43,7 @@
           width: 150px;
         }
         h3 {
+          letter-spacing: 0;
         }
       }
       &-item:hover {

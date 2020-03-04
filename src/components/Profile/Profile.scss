@@ -1,0 +1,59 @@
+.login {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-left {
+    height: 100vh;
+    background: #fff;
+    header {
+      padding: 6rem 0 0 0;
+      background: #251431;
+      background: #161130;
+      height: 225px;
+      color: #fff;
+      .header-text {
+        h6 {
+          font-weight: 600;
+          opacity: 0.8;
+        }
+      }
+    }
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 250px;
+      button {
+        cursor: pointer;
+        height: 60px;
+        width: 200px;
+        color: #fff;
+        font-size: 1rem;
+        background-color: rgb(235, 78, 122);
+        border: 2px solid rgb(235, 78, 122);
+        border-radius: 30px;
+        font-weight: 900;
+        transition: all 0.4s 0s;
+      }
+      button:hover {
+        color: rgb(235, 78, 122);
+        background: #fff;
+      }
+    }
+        p {
+          font-size: 10px;
+        }
+  }
+  &-right {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) no-repeat center center, #EB4E7A url(./images/camera-background.jpg) no-repeat center center;
+    border-left: 10px solid #EB4E7A;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: rgb(235, 78, 122);
+    background-size: cover;
+    height: 100%;
+  }
+}

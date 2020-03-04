@@ -41,11 +41,11 @@ class PeopleCarousel extends React.Component {
             <main className="item-body">
                 <div className="item-body-content">
                     <div className="item-body-content-summary">
-                        <h2>Summary:</h2>
+                        <h2>Summary</h2>
                         <p>{this.props.details.overview}</p>
                     </div>
                     <div className="swiper-container s1" >
-                        <h2>Cast:</h2>
+                        <h2>Cast</h2>
                         <div className="swiper-wrapper">
                             {this.props.credits.cast.map(char => {
                                 return (

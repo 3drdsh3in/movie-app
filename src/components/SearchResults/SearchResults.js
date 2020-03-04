@@ -8,6 +8,7 @@ import './SearchResults.scss';
 
 function SearchResults(props) {
     console.log(props);
+    console.log(props.searchResults.results);
 
     const [searchState, setSearchState] = useState([props.match.params.query]);
     const [pageState, setPageState] = useState(1);
@@ -52,9 +53,19 @@ function SearchResults(props) {
                     <p>Search Results Component</p>}
             </div>
             <div className="searchResults-navigation">
-                {/* onClick={setPageState(pageState + 1) */}
-                <button onClick={() => setPageState(pageState - 1)}>Previous</button>
-                <button onClick={() => setPageState(pageState + 1)}> Next</button>
+                <button onClick={() => setPageState((pageState - 1 < 1) ? 1 : (pageState - 1))}>Previous</button>
+                <button onClick={() => setPageState(
+                    props.searchResults.results
+                        ?
+                        (((props.searchResults.results.length < 20)
+                            ?
+                            pageState
+                            :
+                            (pageState + 1)))
+                        :
+                        1
+                )}
+                > Next</button>
             </div>
         </div>
     )

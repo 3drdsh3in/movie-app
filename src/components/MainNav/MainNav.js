@@ -58,7 +58,7 @@ function MainNav(props) {
                         <i className="fas fa-home fa-2x"></i>
                     </div>
                 </Link>
-                <Link to={'/movie-app/user'}>
+                <Link to={'/movie-app/login'}>
                     <div className="nav-split-section-item">
                         <i className="fas fa-user-circle fa-2x"></i>
                     </div>
