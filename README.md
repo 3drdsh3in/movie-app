@@ -15,7 +15,7 @@ npm install npm@latest -g
 ### Installing todo-app:
 1. Clone the repo
 ```
-git clone https://github.com/3drdsh3in/todo-app.git
+git clone https://github.com/3drdsh3in/movie-app.git
 ```
 2. Install dev dependencies
 ```
