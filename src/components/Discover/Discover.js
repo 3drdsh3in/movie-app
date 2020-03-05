@@ -114,7 +114,7 @@ function Discover(props) {
             </div>
             <h3>{result.title}</h3>
             <div className="discover-container-itemField-item-bottom">
-              <i className="fas fa-star"></i>
+              <i className="fas fa-star highlight"></i>
               <h6>{result.vote_average}</h6>
             </div>
           </Link>

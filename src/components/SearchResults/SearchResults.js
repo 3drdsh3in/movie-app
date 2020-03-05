@@ -45,12 +45,16 @@ function SearchResults(props) {
                         <Link className="searchResults-container-item" to={`/movie-app/details/${props.itemType.toLowerCase()}/${result.id}`} >
                             <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt="pic" />
                             <h3>{result.title}</h3>
+                            <div className="discover-container-itemField-item-bottom">
+                                <i className="fas fa-star highlight"></i>
+                                <h6>{result.vote_average}</h6>
+                            </div>
                         </Link>
                         :
                         console.log('Image doesnt exist')
                     ))
                     :
-                    <p>Search Results Component</p>}
+                    <p>No Results :(</p>}
             </div>
             <div className="searchResults-navigation">
                 <button onClick={() => setPageState((pageState - 1 < 1) ? 1 : (pageState - 1))}>Previous</button>
