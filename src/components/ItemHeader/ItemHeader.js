@@ -17,9 +17,9 @@ class ItemHeader extends React.Component {
                     <header className="item-header" style={{ backgroundImage: `url(http://image.tmdb.org/t/p/original/${headerData.backdrop_path})` }}>
                         <div className="item-header-container">
                             <div className="item-header-container-top">
-                                <Link from="/movie-app/details/:id" to="/movie-app/">
+                                <div onClick={this.props.history.goBack}>
                                     <i className="fas fa-chevron-left fa-3x"></i>
-                                </Link>
+                                </div>
                                 <i className="fas fa-share fa-3x"></i>
                             </div>
                             <div className="item-header-container-bottom">

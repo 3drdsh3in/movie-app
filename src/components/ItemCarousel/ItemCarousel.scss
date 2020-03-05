@@ -38,11 +38,6 @@
       margin-bottom: 2rem;
     }
 
-    &__title:hover {
-      color: rgb(0, 0, 0);
-    }
-
-
     .swiper-slide {
       opacity: .8;
       position: relative;
@@ -63,7 +58,6 @@
         font-family: $primary-font;
         font-size: .9rem;
         margin: 5px 0 0;
-        // width: 135px;
       }
 
       // swiper-slide__genres

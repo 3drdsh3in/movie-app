@@ -5,22 +5,34 @@
     grid-template-columns: repeat(2, 1fr);
   }
   &-left {
-    height: 100vh;
+    height: 100%;
     background: #fff;
     header {
       padding: 6rem 0 0 0;
       background: #251431;
       background: #161130;
-      height: 225px;
+      height: 350px;
       color: #fff;
+      img {
+        width: 150px;
+        transition: transform 0.4s 0s;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
       .header-text {
+        h1 {
+          text-transform: capitalize;
+        }
         h6 {
           font-weight: 600;
           opacity: 0.8;
+          text-transform: uppercase;
         }
       }
     }
     &-buttons {
+      padding: 4rem 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -45,15 +57,32 @@
     }
         p {
           font-size: 10px;
+          padding: 0 0 6rem 0;
         }
   }
   &-right {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) no-repeat center center, #EB4E7A url(./images/camera-background.jpg) no-repeat center center;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #EB4E7A url(./images/camera-background.jpg) no-repeat center center;
     border-left: 10px solid #EB4E7A;
     border-left-width: 10px;
     border-left-style: solid;
     border-left-color: rgb(235, 78, 122);
     background-size: cover;
     height: 100%;
+    h1 {
+      padding: 0 4rem;
+      font-size: 3rem;
+      position: absolute;
+      color: #fff;
+      text-shadow: 4px 4px 0 #EB4E7A;
+      top: 40%;
+      left: 0px;
+      right: 0px;
+      text-transform: uppercase;
+    }
+    h1:hover {
+      transform: translate(-3px, -3px);
+      text-shadow: 1px 1px 0px #EB4E7A ,2px 2px 0px #EB4E7A ,3px 3px 0px #EB4E7A ,4px 4px 0px #EB4E7A, 5px 5px 0px #EB4E7A, 6px 6px 0px #EB4E7A;
+    }
   }
 }

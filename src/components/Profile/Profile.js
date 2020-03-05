@@ -1,12 +1,13 @@
 import React from 'react';
 import './Profile.scss';
+import logo from './images/popcorn.png';
 
 function Profile() {
   return (
     <div className="login">
       <div className="login-left">
         <header>
-          <img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img>
+          <img src={logo} alt="popcorn.png" />
           <div className="header-text">
             <h1>Log In</h1>
             <h6>Movie app</h6>
@@ -18,7 +19,9 @@ function Profile() {
         </div>
         <p>Guest users have access to limited features</p>
       </div>
-      <div className="login-right"></div>
+      <div className="login-right">
+        <h1>Browse and rate your favourite tv shows</h1>
+      </div>
     </div>
   )
 }

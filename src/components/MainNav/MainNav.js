@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import logo from './images/popcorn.png';
 
 // SCSS Stylesheets
 import './MainNav.scss';
 import toggleNav from '../../actions/toggleNav';
 
 function MainNav(props) {
+
+    console.log(props)
 
     const [inputState, setInputState] = useState('');
 
@@ -20,14 +23,19 @@ function MainNav(props) {
     }
 
     const handleSearchQuery = () => {
-        console.log('search')
-        return (document.getElementById('navbar-search') ? inputState : '');
+        return (
+            document.getElementById('navbar-search')
+                ?
+                inputState
+                :
+                ''
+        );
     }
 
     return (
         <nav className="nav-main">
             <div className={`nav-top-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/movie-app/'}><img src="https://img.icons8.com/cotton/64/000000/3d-glasses.png"></img></Link>
+                <Link to={'/movie-app/'}><img src={logo}></img></Link>
 
                 {/* Navbar search: IMPORTANT NOTE, IDK HOW PRESSING ENTER ON THE FORM CAUSES IT TO RUN THE handleSearchQuery function comeback and elaborate since i thought it should only
                 work when i click on the search button?
@@ -36,7 +44,7 @@ function MainNav(props) {
                     <form className="nav-search-form">
                         {/* Input will result in a consistent change in fieldstate for the mainnav component */}
                         <input onChange={handleInputChange} placeholder="search..." className="nav-search-form-input" type="text" name="" id="navbar-search" />
-                        <Link to={`/movie-app/search-results/${handleSearchQuery()}`}>
+                        <Link to={inputState ? `/movie-app/search-results/${handleSearchQuery()}` : `${props.match.url}`}>
                             {/* Note: You DO NOT need to write anything for an enter event in this situation since type="submit" ensures that when the user presses enter
                         the form will automatically submit. 
                          */}

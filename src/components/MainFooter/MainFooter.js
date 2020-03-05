@@ -12,13 +12,13 @@ function MainFooter() {
                     <h1 className="main-footer-left-header-name">Movie App</h1>
                     <hr />
                     <Link to="/movie-app/">Home</Link>
-                    <Link to="/movie-app/user">Profile</Link>
+                    <Link to="/movie-app/login">Profile</Link>
                     <Link to="/movie-app/discover">Discover</Link>
                 </div>
                 <div className="main-footer-left-contacts">
                     <div className="main-footer-left-contacts-item">
                         <h3 className="main-footer-portfolio-header">Portfolio:</h3>
-                        <p><Link to="">3drdsh3in/github.io</Link></p>
+                        <p><a href="http://3drdsh3in.github.io">3drdsh3in/github.io</a></p>
                     </div>
                     <div className="main-footer-left-contacts-item">
                         <h3 className="main-footer-phone-header">Phone Number:</h3>
@@ -29,9 +29,9 @@ function MainFooter() {
             <section className="main-footer-right">
 
                 <div className="main-footer-right-icons">
-                    <Link to=""><i className="fab fa-twitter fa-2x"></i></Link>
-                    <Link to=""><i className="fab fa-facebook-f fa-2x"></i></Link>
-                    <Link to=""><i className="fas fa-book fa-2x"></i></Link>
+                    <a href="https://twitter.com/themoviedb?lang=en"><i className="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.facebook.com/themoviedb/"><i className="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.themoviedb.org/documentation/api"><i className="fas fa-book fa-2x"></i></a>
                 </div>
 
                 <img className="main-footer-mdb-logo" src="https://www.themoviedb.org/assets/2/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" />

@@ -28,6 +28,7 @@ class ItemDetails extends React.Component {
     componentDidMount() {
         let item_id = this.props.match.params.id
         this.getFilmData(item_id)
+        console.log(this.props)
     }
 
     UNSAFE_componentWillReceiveProps(nextProps) {
@@ -36,19 +37,6 @@ class ItemDetails extends React.Component {
             this.getFilmData(nextProps.match.params.id, nextProps.match.params.type);
         }
     }
-
-    // If Movie:
-    // Get:
-    // Name, Rating [Star Rating?], Genre
-    // Movie wallpaper thing, movie wallpaper #2 thing
-    // Movie Summary, Movie Trailers, Movie Reviews
-    // Movie Cast Portraits.
-    // else:
-    // Do the same shit but for TV shows.
-
-    // Display the corresponding shit to the screen via render() return.
-
-    // Add MainFooter At the end of all this.
 
     getFilmData(id, itemType = this.props.match.params.type) {
         let apiKey = this.props.MDBConfig.apiKey;
@@ -93,7 +81,7 @@ class ItemDetails extends React.Component {
 
         return (
             <div className="item-main-content">
-                <ItemHeader details={dispDetails.overview ? dispDetails : ''} />
+                <ItemHeader history={this.props.history} details={dispDetails.overview ? dispDetails : ''} />
                 <PeopleCarousel details={dispDetails ? dispDetails : ''} credits={dispCredits ? dispCredits : ''} />
                 <ItemTrailers trailers={dispTrailers ? dispTrailers : ''} />
                 <ItemReviews reviews={dispReviews ? dispReviews : ''} />

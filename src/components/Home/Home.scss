@@ -7,18 +7,21 @@
 
   .item-controller {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px;
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(2,40%);
+    justify-content: center;
+    grid-template-rows: 45px;
+    grid-column-gap: 25px;
     margin: 0 auto;
     padding-top: 2rem;
-    width: 75%;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2,250px);
+    }
 
     &__switch {
       background: none;
       border: 1px black solid;
       background: linear-gradient(to bottom, #fff 50%, #1c262b 50%);
-      border-radius: 10px;
+      border-radius: 25px;
       background-repeat: no-repeat;
       background-size: 100% 200%;
       background-position: left top;

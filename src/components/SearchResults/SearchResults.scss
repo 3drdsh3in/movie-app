@@ -56,10 +56,10 @@
     justify-content: center;
     button {
       margin: 0 0.25rem;
-      width: 150px;
-      height: 50px;
+      width: 125px;
+      height: 40px;
       border: 1px solid #000;
-      border-radius: 10px;
+      border-radius: 25px;
       cursor: pointer;
       background: none;
       background: linear-gradient(to bottom, #fff 50%, #1c262b 50%);
@@ -74,7 +74,13 @@
         margin: 0 0.5rem;;
         letter-spacing: .4rem;
         width: 100%;
-        max-width: 300px;
+        height: 40px;
+        width: 200px;
+      }
+      @media screen and (min-width: 1800px) {
+        height: 60px;
+        width: 250px;
+        border-radius: 35px;
       }
     }
     button:hover {
