@@ -1,6 +1,13 @@
 @import '../../styles/_variables';
 @import '../../styles/_carousel';
 
+span.swiper-pagination-bullet {
+  background: #ffffff;
+}
+span.swiper-pagination-bullet-active {
+  background: #007aff;
+}
+
 .carousel-container {
   padding: 1rem .2rem 0;
 
