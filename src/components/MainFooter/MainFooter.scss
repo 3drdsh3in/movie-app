@@ -108,6 +108,9 @@
     .main-footer-right {
         padding: 0 0 1rem 0;
         margin: 2rem;
+        @media screen and (max-width: 768px) {
+            margin: 2rem 2rem 0rem 2rem;
+        }
         .main-footer-right-icons {
             flex-wrap: nowrap;
             a {

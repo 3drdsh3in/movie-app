@@ -70,6 +70,7 @@
     background-size: cover;
     height: 100%;
     h1 {
+      display: none;
       padding: 0 4rem;
       font-size: 3rem;
       position: absolute;
@@ -79,6 +80,9 @@
       left: 0px;
       right: 0px;
       text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
     h1:hover {
       transform: translate(-3px, -3px);
