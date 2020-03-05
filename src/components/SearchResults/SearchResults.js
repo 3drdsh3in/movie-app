@@ -43,7 +43,7 @@ function SearchResults(props) {
                 {props.searchResults.results ?
                     props.searchResults.results.map(result => (result.poster_path ?
                         <Link className="searchResults-container-item" to={`/movie-app/details/${props.itemType.toLowerCase()}/${result.id}`} >
-                            <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt="pic" />
+                            <img src={`https://image.tmdb.org/t/p/w342/${result.poster_path}`} alt="pic" />
                             <h3>{result.title}</h3>
                             <div className="discover-container-itemField-item-bottom">
                                 <i className="fas fa-star highlight"></i>

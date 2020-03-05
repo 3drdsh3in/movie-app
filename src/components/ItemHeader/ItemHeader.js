@@ -29,11 +29,11 @@ class ItemHeader extends React.Component {
                                         <h2>{headerData.title}</h2>
                                         <div className="item-header-container-bottom-information-text-rating">
                                             <h3>{headerData.vote_average}</h3>
-                                            <i className={`fas fa-star ${(headerData.vote_average >= 2) ? 'highlight' : ''}`}></i>
-                                            <i className={`fas fa-star ${(headerData.vote_average >= 4) ? 'highlight' : ''}`}></i>
-                                            <i className={`fas fa-star ${(headerData.vote_average >= 6) ? 'highlight' : ''}`}></i>
-                                            <i className={`fas fa-star ${(headerData.vote_average >= 8) ? 'highlight' : ''}`}></i>
-                                            <i className={`fas fa-star ${(headerData.vote_average >= 10) ? 'highlight' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 1) ? (headerData.vote_average >= 2) ? 'highlight' : 'highlight-half' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 3) ? (headerData.vote_average >= 4) ? 'highlight' : 'highlight-half' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 5) ? (headerData.vote_average >= 6) ? 'highlight' : 'highlight-half' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 7) ? (headerData.vote_average >= 8) ? 'highlight' : 'highlight-half' : ''}`}></i>
+                                            <i className={`fas fa-star ${(headerData.vote_average >= 9) ? (headerData.vote_average >= 10) ? 'highlight' : 'highlight-half' : ''}`}></i>
                                         </div>
                                         <div className="item-header-container-bottom-information-text-language">
                                             {headerData.status ? headerData.status : ''} | {headerData.original_language ? headerData.original_language : ''}
