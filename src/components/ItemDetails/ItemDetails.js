@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import getMovieDetails from '../../actions/movieActions/getMovieDetails';
@@ -28,7 +27,6 @@ class ItemDetails extends React.Component {
     componentDidMount() {
         let item_id = this.props.match.params.id
         this.getFilmData(item_id)
-        console.log(this.props)
     }
 
     UNSAFE_componentWillReceiveProps(nextProps) {
