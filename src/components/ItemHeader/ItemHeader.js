@@ -17,8 +17,10 @@ class ItemHeader extends React.Component {
                         <div className="item-header-container">
                             <div className="item-header-container-top">
                                 <div onClick={this.props.history.goBack}>
+                                    <i className="fas fa-chevron-left fa-2x"></i>
                                     <i className="fas fa-chevron-left fa-3x"></i>
                                 </div>
+                                <i className="fas fa-share fa-2x"></i>
                                 <i className="fas fa-share fa-3x"></i>
                             </div>
                             <div className="item-header-container-bottom">
@@ -43,6 +45,7 @@ class ItemHeader extends React.Component {
                                     </div>
                                 </div>
                                 <div className="item-header-container-bottom-like">
+                                    <i className="fas fa-heart fa-2x"></i>
                                     <i className="fas fa-heart fa-3x"></i>
                                 </div>
                             </div>
