@@ -20,8 +20,10 @@ class ItemHeader extends React.Component {
                                     <i className="fas fa-chevron-left fa-2x"></i>
                                     <i className="fas fa-chevron-left fa-3x"></i>
                                 </div>
-                                <i className="fas fa-share fa-2x"></i>
-                                <i className="fas fa-share fa-3x"></i>
+                                <div>
+                                    <i className="fas fa-share fa-2x"></i>
+                                    <i className="fas fa-share fa-3x"></i>
+                                </div>
                             </div>
                             <div className="item-header-container-bottom">
                                 <div className="item-header-container-bottom-information">
