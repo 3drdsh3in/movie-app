@@ -4,6 +4,7 @@
 span.swiper-pagination-bullet {
   background: #ffffff;
 }
+
 span.swiper-pagination-bullet-active {
   background: #007aff;
 }
@@ -13,7 +14,7 @@ span.swiper-pagination-bullet-active {
 
   // carousel-container__separator
   &__separator {
-    background-image: radial-gradient(circle, rgba(210,208,208,0.19091386554621848) 0%, rgba(210,208,208,0) 90%);
+    background-image: radial-gradient(circle, rgba(210, 208, 208, 0.19091386554621848) 0%, rgba(210, 208, 208, 0) 90%);
     border: none;
     height: 2px;
   }
@@ -25,7 +26,7 @@ span.swiper-pagination-bullet-active {
 
     .swiper-button-next {
       display: none;
-      }
+    }
 
     .swiper-button-prev {
       display: none;
@@ -51,6 +52,7 @@ span.swiper-pagination-bullet-active {
       text-align: center;
       transition: transform .2s;
       height: 190px;
+      max-width: 25%;
 
       // swiper-slide__image
       &__image {
@@ -86,7 +88,7 @@ span.swiper-pagination-bullet-active {
         position: absolute;
         left: 25%;
         top: 0.8rem;
-        width: 45px;
+        width: 60px;
 
         // swiper-slide-rating__icon
         &__icon {
@@ -106,8 +108,7 @@ span.swiper-pagination-bullet-active {
 
       a,
       a:active,
-      a:visited
-      a:hover {
+      a:visited a:hover {
         color: initial;
         text-decoration: none;
       }
@@ -117,13 +118,13 @@ span.swiper-pagination-bullet-active {
 
 @media only screen and (min-width: 900px) {
   .carousel-container {
-    
+
     .swiper-container {
-      
+
       .swiper-slide {
         opacity: .6;
         // text-align: left;
-        
+
         &__title {
           text-align: center;
           margin: 0;
@@ -161,6 +162,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 450px) {
   .carousel-container {
 
@@ -189,6 +191,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 600px) {
   .carousel-container {
 
@@ -217,6 +220,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 768px) {
   .carousel-container {
 
@@ -268,6 +272,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 1500px) {
   .carousel-container {
 
@@ -290,6 +295,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 1800px) {
   .carousel-container {
 
@@ -312,6 +318,7 @@ span.swiper-pagination-bullet-active {
     }
   }
 }
+
 @media only screen and (min-width: 2200px) {
   .carousel-container {
 
