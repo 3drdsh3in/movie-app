@@ -44,7 +44,7 @@ class HomeHeader extends React.Component {
                     {this.props.items.map((item, i) => {
                         if (i > 3 && i < 7) {
                             return (
-                                <Link key={item.id} to={`/movie-app/details/${this.props.itemType.toLowerCase()}/${item.id}`} className="swiper-slide" style={{
+                                <Link key={item.id} to={`/details/${this.props.itemType.toLowerCase()}/${item.id}`} className="swiper-slide" style={{
                                     background: `linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.6)

@@ -108,7 +108,7 @@ function Discover(props) {
       </div>
       <div className="discover-container-itemField">
         {props.discoverData.results.map(result =>
-          <Link className="discover-container-itemField-item" to={`/movie-app/details/${props.type.toLowerCase()}/${result.id}`}>
+          <Link className="discover-container-itemField-item" to={`/details/${props.type.toLowerCase()}/${result.id}`}>
             <div className="discover-container-itemField-item-top">
               <img src={`https://image.tmdb.org/t/p/w342/${result.poster_path}`} alt={`${result.title}`} />
             </div>

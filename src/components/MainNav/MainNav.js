@@ -35,7 +35,7 @@ function MainNav(props) {
     return (
         <nav className="nav-main">
             <div className={`nav-top-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/movie-app/'}><img src={logo} alt="logo"></img></Link>
+                <Link to={'/'}><img src={logo} alt="logo"></img></Link>
 
                 {/* Navbar search: IMPORTANT NOTE, IDK HOW PRESSING ENTER ON THE FORM CAUSES IT TO RUN THE handleSearchQuery function comeback and elaborate since i thought it should only
                 work when i click on the search button?
@@ -44,7 +44,7 @@ function MainNav(props) {
                     <form className="nav-search-form">
                         {/* Input will result in a consistent change in fieldstate for the mainnav component */}
                         <input onChange={handleInputChange} placeholder="search..." className="nav-search-form-input" type="text" name="" id="navbar-search" />
-                        <Link to={inputState ? `/movie-app/search-results/${handleSearchQuery()}` : `${props.match.url}`}>
+                        <Link to={inputState ? `/search-results/${handleSearchQuery()}` : `${props.match.url}`}>
                             {/* Note: You DO NOT need to write anything for an enter event in this situation since type="submit" ensures that when the user presses enter
                         the form will automatically submit. 
                          */}
@@ -61,17 +61,17 @@ function MainNav(props) {
             </button>
 
             <div className={`nav-split-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/movie-app/'}>
+                <Link to={'/'}>
                     <div className="nav-split-section-item">
                         <i className="fas fa-home fa-2x"></i>
                     </div>
                 </Link>
-                <Link to={'/movie-app/login'}>
+                <Link to={'/login'}>
                     <div className="nav-split-section-item">
                         <i className="fas fa-user-circle fa-2x"></i>
                     </div>
                 </Link>
-                <Link to={'/movie-app/discover'}>
+                <Link to={'/discover'}>
                     <div className="nav-split-section-item">
                         <i className="far fa-compass fa-2x"></i>
                     </div>

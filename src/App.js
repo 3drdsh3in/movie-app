@@ -17,14 +17,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path="/movie-app/" component={MainNav} />
-        <Route path="/movie-app/" exact component={Home} />
+        <Route path="/" component={MainNav} />
+        <Route path="/" exact component={Home} />
         {/* Renders out a component based on a corresponding url */}
-        <Route path="/movie-app/details/:type/:id" exact component={ItemDetails} />
-        <Route path="/movie-app/search-results/:query" exact component={SearchResults} />
-        <Route path="/movie-app/login" exact component={Profile} />
-        <Route path="/movie-app/discover" exact component={Discover} />
-        <Route path="/movie-app/" component={MainFooter} />
+        <Route path="/details/:type/:id" exact component={ItemDetails} />
+        <Route path="/search-results/:query" exact component={SearchResults} />
+        <Route path="/login" exact component={Profile} />
+        <Route path="/discover" exact component={Discover} />
+        <Route path="/" component={MainFooter} />
       </div>
     </Router>
   );

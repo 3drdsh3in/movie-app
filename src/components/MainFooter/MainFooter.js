@@ -11,9 +11,9 @@ function MainFooter() {
                 <div className="main-footer-left-header">
                     <h1 className="main-footer-left-header-name">Movie App</h1>
                     <hr />
-                    <Link to="/movie-app/">Home</Link>
-                    <Link to="/movie-app/login">Profile</Link>
-                    <Link to="/movie-app/discover">Discover</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/login">Profile</Link>
+                    <Link to="/discover">Discover</Link>
                 </div>
                 <div className="main-footer-left-contacts">
                     <div className="main-footer-left-contacts-item">
