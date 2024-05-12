@@ -34,7 +34,7 @@ function MainFooter() {
                     <a href="https://www.themoviedb.org/documentation/api"><i className="fas fa-book fa-2x"></i></a>
                 </div>
 
-                <img className="main-footer-mdb-logo" src="https://www.themoviedb.org/assets/2/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" />
+                <img className="main-footer-mdb-logo" src="https://www.themoviedb.org/assets/2/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" alt="Logo" />
 
                 <div className="main-footer-right-copyright">
                     <p>Copyright &copy;2020 by Edward Shen</p>

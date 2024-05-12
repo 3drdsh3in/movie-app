@@ -35,7 +35,7 @@ function MainNav(props) {
     return (
         <nav className="nav-main">
             <div className={`nav-top-section ${props.navStatus ? '' : 'hide'}`}>
-                <Link to={'/movie-app/'}><img src={logo}></img></Link>
+                <Link to={'/movie-app/'}><img src={logo} alt="logo"></img></Link>
 
                 {/* Navbar search: IMPORTANT NOTE, IDK HOW PRESSING ENTER ON THE FORM CAUSES IT TO RUN THE handleSearchQuery function comeback and elaborate since i thought it should only
                 work when i click on the search button?

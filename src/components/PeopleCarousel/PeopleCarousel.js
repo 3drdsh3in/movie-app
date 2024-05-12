@@ -53,7 +53,7 @@ class PeopleCarousel extends React.Component {
                                         <div className="swiper-slide">
                                             <div className="flip-card">
                                                 <div className="flip-card-inner">
-                                                    <img className="flip-card-front" src={`https://image.tmdb.org/t/p/w342/${char.profile_path}`} />
+                                                    <img className="flip-card-front" src={`https://image.tmdb.org/t/p/w342/${char.profile_path}`} alt="card-front" />
                                                     <div className="flip-card-back">
                                                         <button>Details</button>
                                                         <button>Information</button>
